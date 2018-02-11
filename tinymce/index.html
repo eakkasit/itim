@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TinyMCE Editor&FileManager</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <!-- TinyMCE FileManager -->
+    <script src="static/tinymce/js/tinymce/tinymce.min.js"></script>
+    <script>
+        tinymce.init({
+        menubar:false,
+        statusbar: true,
+        height : "500",
+        selector: "textarea",theme: "modern",
+        setup: function (editor) {
+            editor.on('change', function () {
+                editor.save();
+            });
+        },
+        plugins: [
+             "advlist autolink link image lists charmap print preview hr anchor pagebreak",
+             "searchreplace wordcount visualblocks visualchars insertdatetime media nonbreaking",
+             "table contextmenu directionality emoticons paste textcolor responsivefilemanager code"
+       ],
+       toolbar1: "bold italic underline | alignleft aligncenter alignright | bullist numlist outdent indent | styleselect",
+       toolbar2: "undo redo | responsivefilemanager | link unlink | image | forecolor backcolor  | preview code ",
+       image_advtab: false ,
+       external_filemanager_path:"static/tinymce/js/tinymce/filemanager/",
+       filemanager_title:"Responsive Filemanager" ,
+       external_plugins: { "filemanager" : "filemanager/plugin.min.js"}
+      });
+      </script>
+       <!-- TinyMCE FileManager -->
+
+
+  </head>
+  <body>
+    <!-- page content -->
+
+    <div> 
+        <textarea></textarea>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
