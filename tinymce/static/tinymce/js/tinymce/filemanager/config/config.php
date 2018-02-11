@@ -73,7 +73,7 @@ $config = array(
 	| with start and final /
 	|
 	*/
-	'upload_dir' => '/app/static/images/source/',
+	'upload_dir' => 'itimpadmaejo/tinymce/static/images/source/',
 	/*
 	|--------------------------------------------------------------------------
 	| relative path from filemanager folder to upload folder

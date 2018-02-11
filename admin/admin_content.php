@@ -93,7 +93,7 @@ if ($_POST) {
         toolbar1: "bold italic underline | alignleft aligncenter alignright | bullist numlist outdent indent | styleselect",
         toolbar2: "undo redo | responsivefilemanager | link unlink | image | forecolor backcolor  | preview code ",
         image_advtab: false,
-        external_filemanager_path: "static/tinymce/js/tinymce/filemanager/",
+        external_filemanager_path: "../tinymce/static/tinymce/js/tinymce/filemanager/",
         filemanager_title: "Responsive Filemanager",
         external_plugins: {"filemanager": "filemanager/plugin.min.js"}
     });
